@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Final result </title>
+	<style>
+	body{
+			position: relative;
+			top: 120px;
+			left: 300px;
+			color: #00121b;
+			font-size: 40px;
+			font-family: monospace;
+            background-image: url("images/good.jpg");
+            background-position: 30% 25%;
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
+	<span></span>
+
+	Your score is: 
+
+
+<script>
+	// var query_str = location.search;
+	// query_str = query_str.replaceAll("?",'');
+	// query_str = query_str.split("=");
+	
+
+	var query_str = location.search;
+	query_str = query_str.replaceAll("?",'');
+	query_str = query_str.replaceAll("%20",' ');
+	var arr_query_str = query_str.split("&");
+	var info_score = arr_query_str[0].split('=')[1];
+	var info_name = arr_query_str[1].split('=')[1];
+
+    document.getElementsByTagName('body')[0].innerHTML += info_score;
+    document.getElementsByTagName('span')[0].innerHTML = 'Hello '+ info_name + '<br>'
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

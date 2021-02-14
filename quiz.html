@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Quiz </title>
+	<script src ="js/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+<div class="timer">
+	<div class="min"></div>
+	<div class="sec"></div>
+</div>
+
+<div class="container">
+
+<div class="questions"></div>
+<div class="answers">
+  	<form id="myForm"></form>
+</div>
+</div>
+
+<div class="counter"> </div>
+
+<div class="marked_ques"></div>
+
+<button class='prev' onclick="prev_ques()"> Previous </button>
+<button class='next' onclick="next_ques()"> Next </button>
+<button class='res' onclick="submit()"> Submit Quiz </button>
+<button class='mark' onclick="mark_ques()"> Mark </button>
+
+
+<script>
+	var query_str = location.search;
+	query_str = query_str.replaceAll("?",'');
+	query_str = query_str.split("=");
+	var Name = query_str[1];
+</script>
+
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

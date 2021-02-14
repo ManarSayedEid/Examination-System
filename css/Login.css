@@ -1,0 +1,67 @@
+body {
+	background-image: url("../images/try1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#container {
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 350px;
+	width: 400px;
+	text-align: center;
+	position: relative;
+	top: 120px;
+	left: 483px;
+	border: 3px solid rgb(110, 235, 235);
+	border-radius: 30px;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+#content {
+	position: relative;
+	top: 3px;
+}
+
+label {
+	padding-right: 50px;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 5px;
+}
+
+input {
+	height: 20px;
+	border-radius: 10px;
+	width: 200px;
+	padding: 4px;
+}
+
+label,
+input {
+	margin: 3px;
+}
+
+button {
+	height: 35px;
+	width: 100px;
+	border-radius: 30px;
+	background-color: transparent;
+	position: relative;
+	top: 30px;
+}
+
+button:hover {
+	background-color: gray;
+	color: white;
+}
+
+h2 {
+	background: -webkit-linear-gradient(rgb(219, 50, 8), rgb(9, 207, 233));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+span {
+	display: block;
+	color: red;
+}
